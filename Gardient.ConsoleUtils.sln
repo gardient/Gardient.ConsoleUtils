@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gardient.ConsoleUtils.AppCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gardient.ConsoleUtils.Inquire", "Gardient.ConsoleUtils.Inquire\Gardient.ConsoleUtils.Inquire.csproj", "{507096AD-F580-499F-9B70-66E1653682C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gardient.ConsoleUtils.Inquire.Question", "Gardient.ConsoleUtils.Inquire.Question\Gardient.ConsoleUtils.Inquire.Question.csproj", "{E35393BC-D160-406F-B68E-6DDBEAC943E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gardient.ConsoleUtils.Inquire.Question", "Gardient.ConsoleUtils.Inquire.Question\Gardient.ConsoleUtils.Inquire.Question.csproj", "{E35393BC-D160-406F-B68E-6DDBEAC943E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1001DD7C-4765-4B5D-9DBD-9FAD4908D980}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gardient.ConsoleUtils.Inquire.Question.Demo", "Gardient.ConsoleUtils.Inquire.Question.Demo\Gardient.ConsoleUtils.Inquire.Question.Demo.csproj", "{3AAC2C06-C779-4B7C-B771-7E21CBD81A55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gardient.ConsoleUtils.Inquire.Demo", "Gardient.ConsoleUtils.Inquire.Demo\Gardient.ConsoleUtils.Inquire.Demo.csproj", "{74334B85-D656-40AA-BB12-C6FF4FC31C60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +38,14 @@ Global
 		{E35393BC-D160-406F-B68E-6DDBEAC943E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E35393BC-D160-406F-B68E-6DDBEAC943E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E35393BC-D160-406F-B68E-6DDBEAC943E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAC2C06-C779-4B7C-B771-7E21CBD81A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAC2C06-C779-4B7C-B771-7E21CBD81A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAC2C06-C779-4B7C-B771-7E21CBD81A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAC2C06-C779-4B7C-B771-7E21CBD81A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74334B85-D656-40AA-BB12-C6FF4FC31C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74334B85-D656-40AA-BB12-C6FF4FC31C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74334B85-D656-40AA-BB12-C6FF4FC31C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74334B85-D656-40AA-BB12-C6FF4FC31C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
