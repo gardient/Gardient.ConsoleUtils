@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gardient.ConsoleUtils.Inqui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gardient.ConsoleUtils.Inquire.Question", "Gardient.ConsoleUtils.Inquire.Question\Gardient.ConsoleUtils.Inquire.Question.csproj", "{E35393BC-D160-406F-B68E-6DDBEAC943E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1001DD7C-4765-4B5D-9DBD-9FAD4908D980}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
