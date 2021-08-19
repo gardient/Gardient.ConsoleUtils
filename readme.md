@@ -6,6 +6,8 @@
 [password-img]: Assets/Screenshots/password.PNG
 [rawlist-img]: Assets/Screenshots/rawlist.png
 
+[![.NET](https://github.com/gardient/Gardient.ConsoleUtils/actions/workflows/dotnet.yml/badge.svg?event=push)](https://github.com/gardient/Gardient.ConsoleUtils/actions/workflows/dotnet.yml)
+
 I would say this was inspired by [agolaszewski's Inquierer.cs](https://github.com/agolaszewski/Inquirer.cs) but that would imply that I didn't just copy most of the code
 
 At this point all I did was:
