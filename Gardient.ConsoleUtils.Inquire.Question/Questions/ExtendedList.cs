@@ -103,7 +103,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
                 return Prompt();
             }
 
-            TResult result = _parseComponent.Parse(value);
+            var result = _parseComponent.Parse(value);
             validationResult = _validationResultComponent.Run(result);
             if (validationResult.HasError)
             {

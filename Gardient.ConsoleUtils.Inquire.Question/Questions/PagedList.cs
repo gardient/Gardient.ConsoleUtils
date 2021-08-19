@@ -72,8 +72,8 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
 
             _renderChoices.Select(_cursorPosition - Consts.CURSOR_OFFSET);
 
-            int boundryTop = Consts.CURSOR_OFFSET;
-            int boundryBottom = boundryTop + _pagingComponent.CurrentPage.Count() - 1;
+            var boundryTop = Consts.CURSOR_OFFSET;
+            var boundryBottom = boundryTop + _pagingComponent.CurrentPage.Count() - 1;
 
             while (true)
             {
@@ -145,7 +145,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
             }
 
             Escape:
-            TResult result = _parseComponent.Parse(_cursorPosition - Consts.CURSOR_OFFSET);
+            var result = _parseComponent.Parse(_cursorPosition - Consts.CURSOR_OFFSET);
             var validationResult = _validationComponent.Run(result);
             if (validationResult.HasError)
             {

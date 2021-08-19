@@ -54,9 +54,9 @@ namespace Gardient.ConsoleUtils.AppConsole
         {
             intteruptedKey = null;
 
-            StringBuilder stringBuilder = new StringBuilder();
+            var stringBuilder = new StringBuilder();
             ConsoleKeyInfo keyInfo;
-            bool returnToPreviousLine = false;
+            var returnToPreviousLine = false;
 
             do
             {
@@ -82,8 +82,8 @@ namespace Gardient.ConsoleUtils.AppConsole
 
                                 stringBuilder = stringBuilder.Remove(stringBuilder.Length - 1, 1);
 
-                                int oldL = Console.CursorLeft;
-                                int oldT = Console.CursorTop;
+                                var oldL = Console.CursorLeft;
+                                var oldT = Console.CursorTop;
                                 PositionWrite(" ", oldL, oldT);
                                 Console.SetCursorPosition(oldL, oldT);
 

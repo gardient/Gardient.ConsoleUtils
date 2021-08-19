@@ -23,7 +23,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
 
         public void Render()
         {
-            int index = 0;
+            var index = 0;
             foreach (var choice in _choicesDictionary)
             {
                 _console.PositionWriteLine($"[{choice.Key}] {_convertToString.Convert.Run(choice.Value)}", 0, index + Consts.CURSOR_OFFSET);

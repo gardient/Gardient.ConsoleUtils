@@ -22,8 +22,8 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
 
         public void Render()
         {
-            int index = 0;
-            foreach (TResult choice in _paging.Paging.CurrentPage)
+            var index = 0;
+            foreach (var choice in _paging.Paging.CurrentPage)
             {
                 _console.PositionWriteLine($"[{index + 1}] {_convert.Convert.Run(choice)}", 0, index + Consts.CURSOR_OFFSET);
                 index++;

@@ -53,7 +53,7 @@ namespace Gardient.ConsoleUtils.Inquire
                 var propertyInfo = ((MemberExpression)action.Body).Member as PropertyInfo;
 
                 var body = action.Body as MemberExpression;
-                object projection = Expression.Lambda<Func<object>>(body.Expression).Compile()();
+                var projection = Expression.Lambda<Func<object>>(body.Expression).Compile()();
 
                 _then = answer => { propertyInfo.SetValue(projection, answer); };
             }
@@ -63,7 +63,7 @@ namespace Gardient.ConsoleUtils.Inquire
                 var fieldInfo = ((MemberExpression)action.Body).Member as FieldInfo;
 
                 var body = action.Body as MemberExpression;
-                object projection = Expression.Lambda<Func<object>>(body.Expression).Compile()();
+                var projection = Expression.Lambda<Func<object>>(body.Expression).Compile()();
 
                 _then = answer => { fieldInfo.SetValue(projection, answer); };
             }

@@ -21,7 +21,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
 
         public StringOrKey WaitForInput()
         {
-            Stack<char> stringBuilder = new Stack<char>();
+            var stringBuilder = new Stack<char>();
 
             ConsoleKeyInfo key;
             do

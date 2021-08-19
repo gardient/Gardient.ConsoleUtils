@@ -30,7 +30,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
         public StringOrKey WaitForInput()
         {
             ConsoleKey? intteruptedKey;
-            string result = _console.Read(out intteruptedKey, AllowTypeFn, IntteruptedKeys.ToArray());
+            var result = _console.Read(out intteruptedKey, AllowTypeFn, IntteruptedKeys.ToArray());
             return new StringOrKey(result, intteruptedKey);
         }
     }

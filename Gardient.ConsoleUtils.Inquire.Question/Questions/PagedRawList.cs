@@ -73,7 +73,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
 
             _console.WriteLine();
             _console.Write("Answer: ");
-            StringOrKey value = _inputComponent.WaitForInput();
+            var value = _inputComponent.WaitForInput();
             _onKey.OnKey(value.InterruptKey);
             if (_onKey.IsInterrupted)
             {
@@ -102,7 +102,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
                 return Prompt();
             }
 
-            TResult result = _parseComponent.Parse(value.Value);
+            var result = _parseComponent.Parse(value.Value);
             validationResult = _validationResultComponent.Run(result);
             if (validationResult.HasError)
             {

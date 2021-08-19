@@ -21,7 +21,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Builders
             },
             value =>
             {
-                string keys = " Press : ";
+                var keys = " Press : ";
                 foreach (var key in @params)
                 {
                     keys += $"[{(char)key}] ";

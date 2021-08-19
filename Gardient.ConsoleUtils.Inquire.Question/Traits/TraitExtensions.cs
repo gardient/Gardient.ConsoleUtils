@@ -68,7 +68,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Traits
             Func<char, bool> allowFn = null;
             if (onlyIntteruptedKeys)
             {
-                List<char> chars = intteruptedKeys.Select(item => (char)item).ToList();
+                var chars = intteruptedKeys.Select(item => (char)item).ToList();
                 allowFn = value =>
                 {
                     return chars.Any(item => item == value);

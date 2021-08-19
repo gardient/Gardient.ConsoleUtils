@@ -20,7 +20,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
             _console.Clear();
             _console.Write("Type again : ");
 
-            StringOrKey repeated = _input.Input.WaitForInput();
+            var repeated = _input.Input.WaitForInput();
             if (repeated.Value != result)
             {
                 _console.WriteError("Strings don't match");

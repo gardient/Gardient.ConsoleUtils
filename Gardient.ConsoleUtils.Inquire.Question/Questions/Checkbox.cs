@@ -64,10 +64,10 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
             _renderchoices.Render();
             _renderchoices.Select(0);
 
-            int boundryTop = Consts.CURSOR_OFFSET;
-            int boundryBottom = boundryTop + _choices.Count - 1;
+            var boundryTop = Consts.CURSOR_OFFSET;
+            var boundryBottom = boundryTop + _choices.Count - 1;
 
-            int cursorPosition = Consts.CURSOR_OFFSET;
+            var cursorPosition = Consts.CURSOR_OFFSET;
 
             while (true)
             {
@@ -122,7 +122,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
             }
 
             Escape:
-            TList result = _parseComponent.Parse(_choices);
+            var result = _parseComponent.Parse(_choices);
             var validationResult = _validationComponent.Run(result);
             if (validationResult.HasError)
             {

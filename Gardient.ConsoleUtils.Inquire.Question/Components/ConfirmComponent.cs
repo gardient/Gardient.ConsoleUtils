@@ -21,7 +21,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
         {
             _console.Clear();
             _console.WriteLine($"Are you sure? [y/n] : {_convert.Convert.Run(result)}");
-            ConsoleKeyInfo key = default(ConsoleKeyInfo);
+            var key = default(ConsoleKeyInfo);
             do
             {
                 key = _console.ReadKey();

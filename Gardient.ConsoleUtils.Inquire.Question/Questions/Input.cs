@@ -84,7 +84,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
                 return Prompt();
             }
 
-            TResult answer = _parseComponent.Parse(value.Value);
+            var answer = _parseComponent.Parse(value.Value);
             validationResult = _validationResultComponent.Run(answer);
 
             if (validationResult.HasError)

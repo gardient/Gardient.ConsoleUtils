@@ -28,7 +28,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
 
         public void Render()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             _console.Clear();
             _console.Write("[?] ", ConsoleColor.Yellow);

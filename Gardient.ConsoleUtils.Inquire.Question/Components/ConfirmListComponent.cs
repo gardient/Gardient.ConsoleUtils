@@ -24,7 +24,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
         {
             _console.Clear();
 
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             sb.Append($"Are you sure? [y/n] : ");
 
@@ -33,7 +33,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
             sb.Append("]");
 
             _console.WriteLine(sb.ToString());
-            ConsoleKeyInfo key = default(ConsoleKeyInfo);
+            var key = default(ConsoleKeyInfo);
             do
             {
                 key = _console.ReadKey();

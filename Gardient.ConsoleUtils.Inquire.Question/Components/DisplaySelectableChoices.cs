@@ -23,8 +23,8 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Components
 
         public void Render()
         {
-            int index = 0;
-            foreach (Selectable<TResult> choice in _choices)
+            var index = 0;
+            foreach (var choice in _choices)
             {
                 _console.PositionWriteLine($"     {_convert.Convert.Run(choice.Item)}", 0, index + Consts.CURSOR_OFFSET);
                 _console.PositionWriteLine(choice.IsSelected ? "*" : " ", 3, index + Consts.CURSOR_OFFSET);

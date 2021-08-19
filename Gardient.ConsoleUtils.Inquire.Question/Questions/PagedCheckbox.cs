@@ -69,8 +69,8 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
 
             _renderchoices.Select(_cursorPosition - Consts.CURSOR_OFFSET);
 
-            int boundryTop = Consts.CURSOR_OFFSET;
-            int boundryBottom = boundryTop + _pagingComponent.CurrentPage.Count - 1;
+            var boundryTop = Consts.CURSOR_OFFSET;
+            var boundryBottom = boundryTop + _pagingComponent.CurrentPage.Count - 1;
 
             while (true)
             {
@@ -157,7 +157,7 @@ namespace Gardient.ConsoleUtils.Inquire.Question.Questions
             }
 
             Escape:
-            TList result = _parseComponent.Parse(_pagingComponent.PagedChoices);
+            var result = _parseComponent.Parse(_pagingComponent.PagedChoices);
             var validationResult = _validationComponent.Run(result);
             if (validationResult.HasError)
             {
