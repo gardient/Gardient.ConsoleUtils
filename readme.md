@@ -12,9 +12,9 @@ I would say this was inspired by [agolaszewski's Inquierer.cs](https://github.co
 
 At this point all I did was:
 
-[x] Break it into different projects
-[x] Move it to netstandard2.0
-[ ] Change the way the Inquirer.Prompt works so that it's more in line with inquirer.js
+- [x] Break it into different projects
+- [x] Move it to netstandard2.0
+- [ ] Change the way the Inquirer.Prompt works so that it's more in line with inquirer.js
 
 Really if you want a well maintained package you should check out [their repository](https://github.com/agolaszewski/Inquirer.cs)
 
