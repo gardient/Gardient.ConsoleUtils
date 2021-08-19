@@ -1,9 +1,4 @@
-﻿/*
- Credit where it's due, most of this come from
- https://github.com/agolaszewski/Inquirer.cs/blob/master/Source/Inquirer/AppConsole.cs
- */
-
-using System;
+﻿using System;
 using System.Linq;
 using System.Text;
 

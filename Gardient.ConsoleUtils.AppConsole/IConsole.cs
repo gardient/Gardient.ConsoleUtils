@@ -1,9 +1,4 @@
-﻿/*
- Credit where it's due, most of this come from
- https://github.com/agolaszewski/Inquirer.cs/blob/master/Source/Inquirer/IConsole.cs
- */
-
-using System;
+﻿using System;
 
 namespace Gardient.ConsoleUtils.AppConsole
 {
