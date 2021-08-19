@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gardient.ConsoleUtils.AppConsole\Gardient.ConsoleUtils.AppConsole.csproj" />
+    <ProjectReference Include="..\Gardient.ConsoleUtils.Inquire.Question\Gardient.ConsoleUtils.Inquire.Question.csproj" />
+  </ItemGroup>
+
+</Project>
