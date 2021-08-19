@@ -2,7 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Gardient</Authors>
+    <Company>n/a</Company>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/gardient/Gardient.ConsoleUtils</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gardient/Gardient.ConsoleUtils</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Gardient.ConsoleUtils.AppConsole\Gardient.ConsoleUtils.AppConsole.csproj" />
