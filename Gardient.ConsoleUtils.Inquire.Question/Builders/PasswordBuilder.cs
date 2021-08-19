@@ -1,9 +1,9 @@
 ﻿using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Components;
-using Gardient.ConsoleUtils.Inquire.Question.Questions;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Components;
+using Gardient.ConsoleUtils.Inquire.Questions;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Builders
+namespace Gardient.ConsoleUtils.Inquire.Builders
 {
     public class PasswordBuilder : InputBuilder<Input<string>, string, string>
     {

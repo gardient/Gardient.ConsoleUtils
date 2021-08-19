@@ -1,6 +1,6 @@
-﻿using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
+﻿using Gardient.ConsoleUtils.Inquire.Interfaces;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Traits
+namespace Gardient.ConsoleUtils.Inquire.Traits
 {
     public interface IPagingTrait<TResult>
     {

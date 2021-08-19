@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Interfaces
+namespace Gardient.ConsoleUtils.Inquire.Interfaces
 {
     public interface IParseComponent<TInput, TResult>
     {

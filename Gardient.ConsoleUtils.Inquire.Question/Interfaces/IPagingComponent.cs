@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Interfaces
+namespace Gardient.ConsoleUtils.Inquire.Interfaces
 {
     public interface IPagingComponent<TResult>
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Components
+namespace Gardient.ConsoleUtils.Inquire.Components
 {
     internal class SelectableListChoices<TResult> : List<Selectable<TResult>>
     {

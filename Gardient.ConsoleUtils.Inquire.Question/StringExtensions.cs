@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Gardient.ConsoleUtils.Inquire.Question
+namespace Gardient.ConsoleUtils.Inquire
 {
     internal static class StringExtensions
     {

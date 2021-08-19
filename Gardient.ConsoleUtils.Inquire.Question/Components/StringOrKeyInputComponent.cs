@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Components
+namespace Gardient.ConsoleUtils.Inquire.Components
 {
     internal class StringOrKeyInputComponent : IWaitForInputComponent<StringOrKey>
     {

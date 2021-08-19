@@ -3,9 +3,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using Gardient.ConsoleUtils.Inquire.Components;
 using Gardient.ConsoleUtils.Inquire.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Components;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
 namespace Gardient.ConsoleUtils.Inquire
 {

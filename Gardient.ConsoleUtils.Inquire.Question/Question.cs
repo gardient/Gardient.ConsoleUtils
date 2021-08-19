@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Gardient.ConsoleUtils.Inquire.Question.Builders;
+using Gardient.ConsoleUtils.Inquire.Builders;
 
-namespace Gardient.ConsoleUtils.Inquire.Question
+namespace Gardient.ConsoleUtils.Inquire
 {
     public static class Question
     {

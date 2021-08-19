@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Components
+namespace Gardient.ConsoleUtils.Inquire.Components
 {
     public class MenuAction
     {

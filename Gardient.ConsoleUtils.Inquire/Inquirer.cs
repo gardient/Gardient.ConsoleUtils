@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Gardient.ConsoleUtils.Inquire.Question.Builders;
-using Gardient.ConsoleUtils.Inquire.Question.Components;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Questions;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Builders;
+using Gardient.ConsoleUtils.Inquire.Components;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Questions;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
 namespace Gardient.ConsoleUtils.Inquire
 {

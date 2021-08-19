@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Components;
+using Gardient.ConsoleUtils.Inquire.Components;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Traits
+namespace Gardient.ConsoleUtils.Inquire.Traits
 {
     public static class TraitExtensions
     {

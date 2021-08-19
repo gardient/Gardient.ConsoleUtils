@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Components
+namespace Gardient.ConsoleUtils.Inquire.Components
 {
     internal class ConfirmListComponent<TList, TResult> : IConfirmComponent<TList> where TList : IEnumerable<TResult>
     {

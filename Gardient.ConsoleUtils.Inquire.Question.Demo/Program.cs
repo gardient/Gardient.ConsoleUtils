@@ -46,7 +46,7 @@ namespace Demo
 
         public static void Input()
         {
-            string result = Question.Input("How are you?")
+            var result = Question.Input("How are you?")
                 .WithConfirmation()
                 .WithDefaultValue("fine")
                 .WithValidation(answer => answer == "fine", "You must be fine!")
@@ -57,7 +57,7 @@ namespace Demo
 
         public static void InputInt()
         {
-            int result = Question.Input<int>("2 + 2 =")
+            var result = Question.Input<int>("2 + 2 =")
                 .WithConfirmation()
                 .WithDefaultValue(4)
                 .WithValidation(answer => answer == 4, "Try again")
@@ -68,7 +68,7 @@ namespace Demo
 
         public static void Checkbox()
         {
-            List<ConsoleColor> defaults = new List<ConsoleColor>() { ConsoleColor.Cyan, ConsoleColor.Yellow, ConsoleColor.DarkCyan };
+            var defaults = new List<ConsoleColor>() { ConsoleColor.Cyan, ConsoleColor.Yellow, ConsoleColor.DarkCyan };
 
             var result = Question.Checkbox("Colors", _complexClassList)
                 .WithConvertToString(item => item.Name)
@@ -82,7 +82,7 @@ namespace Demo
 
         public static void CheckboxPaged()
         {
-            List<ConsoleColor> defaults = new List<ConsoleColor>() { ConsoleColor.Cyan, ConsoleColor.Yellow, ConsoleColor.DarkCyan };
+            var defaults = new List<ConsoleColor>() { ConsoleColor.Cyan, ConsoleColor.Yellow, ConsoleColor.DarkCyan };
 
             var result = Question.Checkbox("Colors", _complexClassList)
                 .Page(3)
@@ -97,7 +97,7 @@ namespace Demo
 
         public static void Confirm()
         {
-            bool result = Question.Confirm("Are you sure?")
+            var result = Question.Confirm("Are you sure?")
                 .WithConfirmation()
                 .WithDefaultValue(true)
                 .WithValidation(answer => answer == true, "You must be sure!")
@@ -108,7 +108,7 @@ namespace Demo
 
         public static void Extended()
         {
-            ConsoleKey result = Question.Extended("[Yes] or [N]o", ConsoleKey.Y, ConsoleKey.N)
+            var result = Question.Extended("[Yes] or [N]o", ConsoleKey.Y, ConsoleKey.N)
                 .WithConfirmation()
                 .WithDefaultValue(ConsoleKey.Y)
                 .WithValidation(answer => answer == ConsoleKey.Y, "Yes!!!")
@@ -119,7 +119,7 @@ namespace Demo
 
         public static void ExtendedList()
         {
-            ConsoleColor result = Question.ExtendedList("Pick",
+            var result = Question.ExtendedList("Pick",
                     _complexClassList
                     .GroupBy(x => x.Name[0])
                     .Select(x => x.First())
@@ -134,7 +134,7 @@ namespace Demo
 
         public static void List()
         {
-            ComplexClass result = Question.List("Pick", _complexClassList)
+            var result = Question.List("Pick", _complexClassList)
                 .WithConfirmation()
                 .WithConvertToString(x => x.Name)
                 .WithDefaultValue(x => x.Color == ConsoleColor.Black)
@@ -146,7 +146,7 @@ namespace Demo
 
         public static void PagedList()
         {
-            ComplexClass result = Question.List("Pick", _complexClassList)
+            var result = Question.List("Pick", _complexClassList)
                 .WithConfirmation()
                 .WithConvertToString(x => x.Name)
                 .WithDefaultValue(x => x.Color == ConsoleColor.Black)
@@ -159,7 +159,7 @@ namespace Demo
 
         public static void RawList()
         {
-            ComplexClass result = Question.RawList("Pick", _complexClassList)
+            var result = Question.RawList("Pick", _complexClassList)
                 .WithConfirmation()
                 .WithConvertToString(x => x.Name)
                 .WithDefaultValue(x => x.Color == ConsoleColor.Black)
@@ -171,7 +171,7 @@ namespace Demo
 
         private static void PagedRawList()
         {
-            ComplexClass result = Question.RawList("Pick", _complexClassList)
+            var result = Question.RawList("Pick", _complexClassList)
                 .WithConfirmation()
                 .WithConvertToString(x => x.Name)
                 .WithDefaultValue(x => x.Color == ConsoleColor.Black)
@@ -184,7 +184,7 @@ namespace Demo
 
         private static void Password()
         {
-            string result = Question.Password("Top secret password?")
+            var result = Question.Password("Top secret password?")
                .WithConfirmation()
                .Prompt();
 

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Gardient.ConsoleUtils.Inquire.Question.Components;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Components;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Questions
+namespace Gardient.ConsoleUtils.Inquire.Questions
 {
     public class Checkbox<TList, TResult> : IQuestion<TList> where TList : IEnumerable<TResult>
     {

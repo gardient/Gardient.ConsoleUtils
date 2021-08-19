@@ -1,4 +1,4 @@
-﻿namespace Gardient.ConsoleUtils.Inquire.Question
+﻿namespace Gardient.ConsoleUtils.Inquire
 {
     internal class Consts
     {

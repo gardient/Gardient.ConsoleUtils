@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Components
+namespace Gardient.ConsoleUtils.Inquire.Components
 {
     internal class DisplaRawChoices<TResult> : IRenderChoices<TResult>
     {

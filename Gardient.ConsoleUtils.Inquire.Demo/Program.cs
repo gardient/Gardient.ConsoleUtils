@@ -6,11 +6,11 @@ namespace Demo2
     {
         private static void Main(string[] args)
         {
-            string answer = string.Empty;
+            var answer = string.Empty;
             Inquirer.Prompt(Question.Input("1")).Bind(() => answer);
             Inquirer.Prompt(Question.Input("2")).Bind(() => answer).After(() =>
             {
-                int x = 1;
+                var x = 1;
             });
             Inquirer.Prompt(() =>
             {

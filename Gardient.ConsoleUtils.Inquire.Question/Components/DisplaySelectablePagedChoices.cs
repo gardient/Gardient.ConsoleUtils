@@ -1,9 +1,9 @@
 ﻿using System;
 using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Components
+namespace Gardient.ConsoleUtils.Inquire.Components
 {
     internal class DisplaySelectablePagedChoices<TResult> : IRenderChoices<TResult>
     {

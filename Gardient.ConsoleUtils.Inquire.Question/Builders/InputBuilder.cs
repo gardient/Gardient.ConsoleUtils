@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel;
 using Gardient.ConsoleUtils.AppConsole;
-using Gardient.ConsoleUtils.Inquire.Question.Components;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Components;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Builders
+namespace Gardient.ConsoleUtils.Inquire.Builders
 {
     public abstract class InputBuilder<TQuestion, TInput, TResult>
         : IConfirmTrait<TResult>,

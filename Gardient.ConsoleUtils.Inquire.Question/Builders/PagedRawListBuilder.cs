@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Gardient.ConsoleUtils.Inquire.Question.Interfaces;
-using Gardient.ConsoleUtils.Inquire.Question.Questions;
-using Gardient.ConsoleUtils.Inquire.Question.Traits;
+using Gardient.ConsoleUtils.Inquire.Interfaces;
+using Gardient.ConsoleUtils.Inquire.Questions;
+using Gardient.ConsoleUtils.Inquire.Traits;
 
-namespace Gardient.ConsoleUtils.Inquire.Question.Builders
+namespace Gardient.ConsoleUtils.Inquire.Builders
 {
     public class PagedRawListBuilder<TResult> : InputBuilder<PagedRawList<TResult>, string, TResult>, IRenderChoicesTrait<TResult>, IPagingTrait<TResult>
     {
