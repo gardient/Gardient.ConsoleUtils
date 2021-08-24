@@ -85,10 +85,11 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
                         {
                             if (cursorPosition > boundryTop)
                             {
+                                _renderChoices.UnSelect(cursorPosition - Consts.CURSOR_OFFSET);
                                 cursorPosition -= 1;
                             }
 
-                            _renderChoices.Render();
+                            //_renderChoices.Render();
                             _renderChoices.Select(cursorPosition - Consts.CURSOR_OFFSET);
 
                             break;
@@ -98,10 +99,11 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
                         {
                             if (cursorPosition < boundryBottom)
                             {
+                                _renderChoices.UnSelect(cursorPosition - Consts.CURSOR_OFFSET);
                                 cursorPosition += 1;
                             }
 
-                            _renderChoices.Render();
+                            //_renderChoices.Render();
                             _renderChoices.Select(cursorPosition - Consts.CURSOR_OFFSET);
 
                             break;

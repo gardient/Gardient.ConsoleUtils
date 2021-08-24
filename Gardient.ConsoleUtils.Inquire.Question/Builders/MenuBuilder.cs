@@ -16,7 +16,6 @@ namespace Gardient.ConsoleUtils.Inquire.Builders
             Choices = new List<MenuAction>();
 
             this.RenderQuestion(header, this, this, console);
-            this.Parse(Choices);
             this.RenderChoices(Choices, this, Console);
             this.Parse(Choices);
             this.Input(Console, true, ConsoleKey.Enter, ConsoleKey.DownArrow, ConsoleKey.UpArrow);

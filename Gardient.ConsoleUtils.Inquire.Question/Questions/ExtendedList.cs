@@ -71,7 +71,7 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
 
             _renderChoices.Render();
 
-            var value = _input.WaitForInput().InterruptKey.Value;
+            var value = _input.WaitForInput().InterruptKey ?? ConsoleKey.Enter;
             _onKey.OnKey(value);
             if (_onKey.IsInterrupted)
             {
