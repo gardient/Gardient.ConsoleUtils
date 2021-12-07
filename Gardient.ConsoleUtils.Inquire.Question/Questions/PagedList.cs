@@ -75,7 +75,8 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
             var boundryTop = Consts.CURSOR_OFFSET;
             var boundryBottom = boundryTop + _pagingComponent.CurrentPage.Count() - 1;
 
-            while (true)
+            var keepLooping = true;
+            while (keepLooping)
             {
                 var keyPressed = _input.WaitForInput().InterruptKey;
                 _onKey.OnKey(keyPressed);
@@ -136,7 +137,8 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
 
                     case ConsoleKey.Enter:
                         {
-                            goto Escape;
+                            keepLooping = false;
+                            break;
                         }
                 }
 
@@ -144,7 +146,6 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
                 _renderChoices.Select(_cursorPosition - Consts.CURSOR_OFFSET);
             }
 
-            Escape:
             var result = _parseComponent.Parse(_cursorPosition - Consts.CURSOR_OFFSET);
             var validationResult = _validationComponent.Run(result);
             if (validationResult.HasError)

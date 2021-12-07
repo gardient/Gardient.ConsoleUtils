@@ -70,7 +70,8 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
 
             var cursorPosition = Consts.CURSOR_OFFSET;
 
-            while (true)
+            var keepLooping = true;
+            while (keepLooping)
             {
                 var keyPressed = _input.WaitForInput().InterruptKey;
                 _onKey.OnKey(keyPressed);
@@ -111,12 +112,12 @@ namespace Gardient.ConsoleUtils.Inquire.Questions
 
                     case ConsoleKey.Enter:
                         {
-                            goto Escape;
+                            keepLooping = false;
+                            break;
                         }
                 }
             }
 
-            Escape:
             var result = _parseComponent.Parse(cursorPosition - Consts.CURSOR_OFFSET);
             var validationResult = _validationComponent.Run(result);
             if (validationResult.HasError)
