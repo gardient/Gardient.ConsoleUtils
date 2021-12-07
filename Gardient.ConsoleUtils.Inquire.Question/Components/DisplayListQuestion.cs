@@ -30,7 +30,7 @@ namespace Gardient.ConsoleUtils.Inquire.Components
         {
             var sb = new StringBuilder();
 
-            _console.Clear();
+            //_console.Clear();
             _console.Write("[?] ", ConsoleColor.Yellow);
 
             sb.Append($"{_message} : ");

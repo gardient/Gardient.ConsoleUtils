@@ -15,7 +15,7 @@ namespace Gardient.ConsoleUtils.Inquire.Components
 
         public void Render(string errorMessage)
         {
-            Console.Clear();
+            //Console.Clear();
             _console.WriteError(errorMessage);
             Console.ReadKey();
         }

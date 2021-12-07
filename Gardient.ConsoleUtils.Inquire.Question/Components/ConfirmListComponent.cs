@@ -22,7 +22,7 @@ namespace Gardient.ConsoleUtils.Inquire.Components
 
         public bool Confirm(TList result)
         {
-            _console.Clear();
+            //_console.Clear();
 
             var sb = new StringBuilder();
 

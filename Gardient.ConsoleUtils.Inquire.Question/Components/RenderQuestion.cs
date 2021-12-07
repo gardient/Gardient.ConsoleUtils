@@ -15,17 +15,29 @@ namespace Gardient.ConsoleUtils.Inquire.Components
 
         private string _message;
 
-        public RenderQuestion(string message, IConvertToStringTrait<TResult> convert, IDefaultTrait<TResult> @default, IConsole console)
+        private bool _clearConsole;
+
+        public RenderQuestion(string message, IConvertToStringTrait<TResult> convert, IDefaultTrait<TResult> @default, IConsole console, bool clearConsole = false)
         {
             _message = message;
             _convert = convert;
             _default = @default;
             _console = console;
+            _clearConsole = clearConsole;
+        }
+
+        public RenderQuestion(RenderQuestion<TResult> other, string message = null, IConvertToStringTrait<TResult> convert = null, IDefaultTrait<TResult> @default = null, IConsole console = null, bool? clearConsole = null)
+        {
+            _message = message ?? other._message;
+            _convert = convert ?? other._convert;
+            _default = @default ?? other._default;
+            _console = console ?? other._console;
+            _clearConsole = clearConsole ?? other._clearConsole;
         }
 
         public void Render()
         {
-            _console.Clear();
+            //if (_clearConsole) _console.Clear();
             _console.Write("[?] ", ConsoleColor.Yellow);
             var question = $"{_message} : ";
             if (_default.Default.HasDefault)

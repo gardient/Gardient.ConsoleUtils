@@ -17,7 +17,7 @@ namespace Gardient.ConsoleUtils.Inquire.Components
 
         public bool Confirm(string result)
         {
-            _console.Clear();
+            //_console.Clear();
             _console.Write("Type again : ");
 
             var repeated = _input.Input.WaitForInput();

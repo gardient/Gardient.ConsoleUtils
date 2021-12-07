@@ -20,6 +20,14 @@ namespace Gardient.ConsoleUtils.Inquire.Components
             _console = console;
         }
 
+        public void ClearChoices()
+        {
+            for (int i = 0; i < _paging.Paging.CurrentPage.Count; i++)
+            {
+                _console.ClearLine(i + Consts.CURSOR_OFFSET);
+            }
+        }
+
         public void Render()
         {
             var index = 0;

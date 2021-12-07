@@ -25,7 +25,7 @@ namespace Gardient.ConsoleUtils.Inquire.Components
 
         public void Render()
         {
-            _console.Clear();
+            //_console.Clear();
             _console.Write("[?] ", ConsoleColor.Yellow);
             var question = $"{_message} [y/n] : ";
             if (_default.Default.HasDefault)

@@ -8,23 +8,33 @@ namespace Gardient.ConsoleUtils.AppConsole
     {
         public int CursorLeft
         {
-            get
-            {
-                return Console.CursorLeft;
-            }
+            get => Console.CursorLeft;
         }
 
         public int CursorTop
         {
-            get
-            {
-                return Console.CursorTop;
-            }
+            get => Console.CursorTop;
+        }
+
+        public int WindowWidth
+        {
+            get => Console.WindowWidth;
+        }
+
+        public int WindowHeight
+        {
+            get => Console.WindowHeight;
         }
 
         public void Clear()
         {
             Console.Clear();
+        }
+
+        public void ClearLine(int y)
+        {
+            PositionWrite(new string(' ', WindowWidth), y: y);
+            SetCursorPosition(0, y);
         }
 
         public void PositionWrite(string text, int x = 0, int y = 0, ConsoleColor color = ConsoleColor.White)

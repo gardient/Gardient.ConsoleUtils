@@ -8,7 +8,13 @@ namespace Gardient.ConsoleUtils.AppConsole
 
         int CursorTop { get; }
 
+        int WindowWidth { get; }
+
+        int WindowHeight { get; }
+
         void Clear();
+
+        void ClearLine(int y);
 
         void PositionWrite(string text, int x = 0, int y = 0, ConsoleColor color = ConsoleColor.White);
 

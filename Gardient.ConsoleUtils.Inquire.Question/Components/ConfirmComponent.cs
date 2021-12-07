@@ -19,7 +19,7 @@ namespace Gardient.ConsoleUtils.Inquire.Components
 
         public bool Confirm(TResult result)
         {
-            _console.Clear();
+            //_console.Clear();
             _console.WriteLine($"Are you sure? [y/n] : {_convert.Convert.Run(result)}");
             var key = default(ConsoleKeyInfo);
             do
