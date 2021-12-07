@@ -5,6 +5,7 @@
     <RootNamespace>Gardient.ConsoleUtils.Inquire</RootNamespace>
     <Authors>Gardient</Authors>
     <Company>n/a</Company>
+    <Description>Inquirer style questions</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/gardient/Gardient.ConsoleUtils</PackageProjectUrl>

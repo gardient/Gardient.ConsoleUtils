@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Gardient</Authors>
     <Company>n/a</Company>
+    <Description>Console utility class with powerful positioning and line reading functionality</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/gardient/Gardient.ConsoleUtils</PackageProjectUrl>

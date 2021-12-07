@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Gardient</Authors>
     <Company>n/a</Company>
+    <Description>Brings together Gardient.ConsoleUtils.Inquire.Question into a one stop full interrogation package</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/gardient/Gardient.ConsoleUtils</PackageProjectUrl>
