@@ -1,10 +1,10 @@
-[checkbox-img]: Assets/Screenshots/checkbox.png
-[confirm-img]: Assets/Screenshots/confirm.PNG
-[extended-img]: Assets/Screenshots/extended.png
-[input-img]: Assets/Screenshots/input.png
-[list-img]: Assets/Screenshots/list.png
-[password-img]: Assets/Screenshots/password.PNG
-[rawlist-img]: Assets/Screenshots/rawlist.png
+[checkbox-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/checkbox.png
+[confirm-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/confirm.PNG
+[extended-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/extended.png
+[input-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/input.png
+[list-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/list.png
+[password-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/password.PNG
+[rawlist-img]: https://raw.githubusercontent.com/gardient/Gardient.ConsoleUtils/master/Assets/Screenshots/rawlist.png
 
 [![.NET](https://github.com/gardient/Gardient.ConsoleUtils/actions/workflows/dotnet.yml/badge.svg)](https://github.com/gardient/Gardient.ConsoleUtils/actions/workflows/dotnet.yml)
 
